@@ -13,7 +13,6 @@
     "serve": "vue-cli-service serve",
     "build": "npm-run-all -p build:*",
     "build:bundle": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/bundle src/components/index.js",
-    "build:hello-world": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/hello_world src/components/HelloWorld/index.js",
     "build:accordion": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/accordion src/components/Accordion/index.js",
     "lint": "vue-cli-service lint",
     "release": "dotenv semantic-release",
