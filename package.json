@@ -1,6 +1,6 @@
 {
   "name": "@educorvi/bootstrap_components",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": false,
   "files": [
     "dist/*"
@@ -15,7 +15,8 @@
     "build:bundle": "vue-cli-service build --name dist --target lib --dest dist/bundle src/components/index.js",
     "build:hello-world": "vue-cli-service build --name dist --target lib --dest dist/hello_world src/components/HelloWorld/index.js",
     "build:accordion": "vue-cli-service build --name dist --target lib --dest dist/accordion src/components/Accordion/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "release": "dotenv semantic-release"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
@@ -31,9 +32,11 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "dotenv-cli": "^4.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "npm-run-all": "^4.1.5",
+    "semantic-release": "^17.4.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
