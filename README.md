@@ -29,6 +29,6 @@ Beispiel:
 </html>
 ```
 
-##Komponenten
+## Komponenten
 - Accordion: Rendert ein Accordion. Im Attribut `data` kann ein Array mit Akkordionelementen übergeben werden. 
     Jedes dieser Elemente sollte die beiden Eigenschaften `title` (Titel des Akkordionreiters) und `content`(als html codierter Inhalt des Akkordionreiters) enthalten
