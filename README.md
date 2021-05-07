@@ -20,15 +20,15 @@ Beispiel:
     <title>Titel</title>
 </head>
 <body>
-<hello-world msg="Hello"></hello-world>
 <div style="width: 400px; margin: 20px">
     <vue-accordion data='[{"title": "Abschnitt 1", "content": "some html"},{"title": "Teil 2", "content": "some <b>more</b> html"}]'></vue-accordion>
 </div>
 
-<script src="https://unpkg.com/@educorvi/bootstrap_components/dist/bundle/dist.umd.min.js"></script>
+<script src="https://unpkg.com/@educorvi/bootstrap_components/dist/accordion/dist.umd.min.js"></script>
 </body>
 </html>
 ```
 
-
-Detailiertere Beschreibung der Komponenten folgt noch...
+##Komponenten
+- Accordion: Rendert ein Accordion. Im Attribut `data` kann ein Array mit Akkordionelementen übergeben werden. 
+    Jedes dieser Elemente sollte die beiden Eigenschaften `title` (Titel des Akkordionreiters) und `content`(als html codierter Inhalt des Akkordionreiters) enthalten
