@@ -3,6 +3,7 @@
 ## Verwendung
 Das package als script im HTML importieren, anschließend können die custom tags verwendet werden.
 URL des gesamten Bundles: `https://unpkg.com/@educorvi/bootstrap_components/dist/bundle/dist.umd.min.js`
+Alternativ finden sich die Skripte auch als Anhang an den Releases.
 
 Zusätzlich muss das CSS von Bootstrap vorhanden sein.
 
