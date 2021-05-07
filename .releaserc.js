@@ -6,7 +6,7 @@ module.exports = {
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
         ["@semantic-release/github", {
-            "assets": ["dist/**"]
+            "assets": ["dist/.zip"]
         }],
         ["@semantic-release/git", {
             "assets": ["package.json"],
