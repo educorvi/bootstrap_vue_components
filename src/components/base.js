@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import vueCustomElement from 'vue-custom-element'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'document-register-element/build/document-register-element'
 
 Vue.config.productionTip = false

@@ -16,6 +16,8 @@
 <script>
 import {BCollapse, BButton, BCard, BCardHeader, BCardBody, VBToggle} from 'bootstrap-vue'
 import {v4 as uuidv4} from 'uuid'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 export default {
   name: "Accordeon",
   props: {

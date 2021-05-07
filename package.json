@@ -1,13 +1,20 @@
 {
-  "name": "bootstrap_components",
+  "name": "@educorvi/bootstrap_components",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "files": [
+    "dist/*"
+  ],
+  "license": "MIT",
+  "author": "Julian Pollinger",
+  "repository": "https://github.com/educorvi/bootstrap_vue_components",
+  "bugs": "https://github.com/educorvi/bootstrap_vue_components/issues",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "npm-run-all -p build:*",
-    "build:bundle": "vue-cli-service build --target lib --dest dist/bundle --name hello-world src/components/index.js",
-    "build:hello-world": "vue-cli-service build --target lib --dest dist/hello_world --name hello-world src/components/HelloWorld/index.js",
-    "build:accordion": "vue-cli-service build --target lib --dest dist/accordion --name accordion src/components/Accordion/index.js",
+    "build:bundle": "vue-cli-service build --name dist --target lib --dest dist/bundle src/components/index.js",
+    "build:hello-world": "vue-cli-service build --name dist --target lib --dest dist/hello_world src/components/HelloWorld/index.js",
+    "build:accordion": "vue-cli-service build --name dist --target lib --dest dist/accordion src/components/Accordion/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
