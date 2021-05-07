@@ -2,12 +2,13 @@
 
 ## Verwendung
 Das package als script im HTML importieren, anschließend können die custom tags verwendet werden.
-URL des gesamten Bundles: `https://unpkg.com/@educorvi/bootstrap_components/dist/bundle/dist.umd.min.js`
+URL des gesamten Bundles: `https://unpkg.com/@educorvi/bootstrap_components/dist/bundle/dist.umd.min.js.
+
 Alternativ finden sich die Skripte auch als Anhang an den Releases.
 
 Zusätzlich muss das CSS von Bootstrap vorhanden sein.
 
-Alternativ einfach `bundle` in der URL durch einen der folgenden Möglichkeiten ersetzen, um nur den entsprechenden Komponenten zu importieren:
+`bundle` in der URL lässt sich durch eine der folgenden Möglichkeiten ersetzen, um nur den entsprechenden Komponenten zu importieren:
 - bundle
 - accordion
 
