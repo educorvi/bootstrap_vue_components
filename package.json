@@ -7,13 +7,15 @@
     "build": "npm-run-all -p build:*",
     "build:bundle": "vue-cli-service build --target lib --dest dist/bundle --name hello-world src/components/index.js",
     "build:hello-world": "vue-cli-service build --target lib --dest dist/hello_world --name hello-world src/components/HelloWorld/index.js",
+    "build:accordion": "vue-cli-service build --target lib --dest dist/accordion --name accordion src/components/Accordion/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0",
+    "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "document-register-element": "^1.14.10",
+    "uuid": "^8.3.2",
     "vue": "^2.6.12",
     "vue-custom-element": "^3.3.0"
   },
