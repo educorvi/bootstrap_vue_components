@@ -16,7 +16,8 @@
     "build:accordion": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/accordion src/components/Accordion/index.js",
     "lint": "vue-cli-service lint",
     "release": "dotenv semantic-release",
-    "zip": "zip-folder dist"
+    "zip": "zip-folder dist",
+    "postversion": "npm run build && npm run zip"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
