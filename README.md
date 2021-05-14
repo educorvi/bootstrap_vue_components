@@ -12,6 +12,8 @@ Zusätzlich muss das CSS von Bootstrap vorhanden sein.
 - bundle
 - accordion
 
+An jede der Bezeichnungen kann noch -nv angehängt werden, zum Besipiel bundle-nv. Das ist dann eine Version, die Vue nicht enthält, die Dateigröße ist dann kleiner, allerdings muss das Vue-Script dann manuell hinzugefügt werden.
+
 
 Beispiel:
 ```html
