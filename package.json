@@ -10,6 +10,7 @@
   "bugs": "https://github.com/educorvi/bootstrap_vue_components/issues",
   "scripts": {
     "legacyOpenSSL": "export NODE_OPTIONS=--openssl-legacy-provider",
+    "prepare": "yarn run build",
     "serve": "vue-cli-service serve",
     "build": "npm-run-all -p 'build:*'",
     "build:bundle": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/bundle src/components/index.js",

@@ -24,6 +24,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
       - run: yarn install --immutable
       - run: yarn run build
       - run: yarn run lint
@@ -42,6 +43,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14
+          cache: 'yarn'
       - name: Install dependencies
         run: yarn install --immutable
       - name: Release
