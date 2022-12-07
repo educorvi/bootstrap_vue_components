@@ -21,7 +21,7 @@
     "lint": "vue-cli-service lint",
     "release": "dotenv semantic-release",
     "zip": "zip-folder dist",
-    "postversion": "npm run build && npm run zip"
+    "postversion": "yarn run build && yarn run zip"
   },
   "dependencies": {
     "axios": "^1.2.1",
@@ -72,6 +72,7 @@
   ],
   "packageManager": "yarn@3.3.0",
   "engines": {
-    "node": "^14.0.0"
+    "node": "^14.0.0",
+    "npm": "NPM is deprecated for this project, please use yarn"
   }
 }
