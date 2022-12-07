@@ -6,13 +6,15 @@ name: PublishToGithubPackages
 # events but only for the master branch
 on:
   release:
-    types: [published]
+    types: [ published ]
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   publish-gpr:
     runs-on: ubuntu-latest
+    env:
+      AUTH_TOKEN_SECRET: ${{secrets.PUBLISH_GITHUB_PACKAGE_TOKEN}}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -23,7 +25,5 @@ jobs:
           cache: 'yarn'
       - run: yarn install --immutable
       - run: yarn config set _authToken $AUTH_TOKEN_SECRET
-        env:
-          AUTH_TOKEN_SECRET: ${{secrets.PUBLISH_GITHUB_PACKAGE_TOKEN}}
       - run: echo registry=https://npm.pkg.github.com/educorvi >> .npmrc
       - run: yarn npm publish
