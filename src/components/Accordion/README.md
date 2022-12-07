@@ -3,6 +3,10 @@
 Renders an accordion:
 ![Screenshot](../../img/accordion.png)
 
+## Usage
+
+Import the needed script as written in the main README. After that you can use `<vue-accordion ... />` in your code.
+
 ## Options
 
 The contents of the accordion can be set by passing a JSON string that describes the contents in the `data` attribute.

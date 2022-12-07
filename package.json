@@ -11,7 +11,7 @@
   "scripts": {
     "legacyOpenSSL": "export NODE_OPTIONS=--openssl-legacy-provider",
     "serve": "vue-cli-service serve",
-    "build": "npm-run-all -p build:*",
+    "build": "npm-run-all -p 'build:*'",
     "build:bundle": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/bundle src/components/index.js",
     "build:bundleNV": "vue-cli-service build --name dist --target lib --dest dist/bundle-nv src/components/index.js",
     "build:accordion": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/accordion src/components/Accordion/index.js",
@@ -24,6 +24,7 @@
     "postversion": "npm run build && npm run zip"
   },
   "dependencies": {
+    "axios": "^1.2.1",
     "bootstrap": "^4.6.2",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.26.1",
@@ -45,6 +46,8 @@
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.2.2",
     "npm-run-all": "^4.1.5",
+    "sass": "^1.56.1",
+    "sass-loader": "^10.4.1",
     "semantic-release": "^19.0.5",
     "vue-template-compiler": "^2.7.14"
   },
