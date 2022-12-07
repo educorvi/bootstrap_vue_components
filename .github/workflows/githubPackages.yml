@@ -24,7 +24,7 @@ jobs:
       - run: yarn install --immutable
       - run: echo always-auth=true >> .npmrc
       - run: echo registry=https://npm.pkg.github.com >> .npmrc
-      - run: echo https://npm.pkg.github.com/:_authToken=$AUTH_TOKEN_SECRET
+      - run: echo https://npm.pkg.github.com/:_authToken=$AUTH_TOKEN_SECRET >> .npmrc
         env:
           AUTH_TOKEN_SECRET: ${{secrets.PUBLISH_GITHUB_PACKAGE_TOKEN}}
       - run: yarn npm publish
