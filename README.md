@@ -1,4 +1,8 @@
-# bootstrap_components
+# vue webcomponents
+
+## Komponenten
+- [accordion](./src/components/Accordion/README.md)
+- [singleFileAudio](./src/components/SingleFileAudioPlayer/README.md)
 
 ## Verwendung
 Das package als script im HTML importieren, anschließend können die custom tags verwendet werden.
@@ -33,7 +37,3 @@ Beispiel:
 </body>
 </html>
 ```
-
-## Komponenten
-- Accordion: Rendert ein Accordion. Im Attribut `data` kann ein Array mit Akkordionelementen übergeben werden. 
-    Jedes dieser Elemente sollte die beiden Eigenschaften `title` (Titel des Akkordionreiters) und `content`(als html codierter Inhalt des Akkordionreiters) enthalten
