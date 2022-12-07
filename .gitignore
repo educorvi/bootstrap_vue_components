@@ -24,3 +24,11 @@ pnpm-debug.log*
 *.sw?
 /dist.zip
 /test.html
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
