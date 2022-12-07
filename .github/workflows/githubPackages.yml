@@ -22,7 +22,8 @@ jobs:
           scope: '@educorvi'
           cache: 'yarn'
       - run: yarn install --immutable
-      - run: echo registry=https://npm.pkg.github.com/educorvi >> .npmrc
-      - run: npm publish
+      - run: yarn config set _authToken $AUTH_TOKEN_SECRET
         env:
-          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_PACKAGE_TOKEN}}
+          AUTH_TOKEN_SECRET: ${{secrets.PUBLISH_GITHUB_PACKAGE_TOKEN}}
+      - run: echo registry=https://npm.pkg.github.com/educorvi >> .npmrc
+      - run: yarn npm publish
