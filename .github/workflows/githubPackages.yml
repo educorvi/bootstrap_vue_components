@@ -13,23 +13,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-      - run: npm ci
-      - run: npm run build
-      - run: npm run test
-        
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: yarn install --immutable
+      - run: yarn run build
+      - run: yarn run lint
+
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
-      with:
-        registry-url: https://npm.pkg.github.com/
-        scope: '@educorvi'
-    - run: npm ci
-    - run: echo registry=https://npm.pkg.github.com/educorvi >> .npmrc
-    - run: npm publish
-      env:
-        NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_PACKAGE_TOKEN}}
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          registry-url: https://npm.pkg.github.com/
+          scope: '@educorvi'
+      - run: npm install
+      - run: echo registry=https://npm.pkg.github.com/educorvi >> .npmrc
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_PACKAGE_TOKEN}}

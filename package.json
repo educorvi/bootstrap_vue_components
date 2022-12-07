@@ -1,7 +1,6 @@
 {
   "name": "@educorvi/bootstrap_components",
   "version": "1.1.0",
-  "private": false,
   "files": [
     "dist/*"
   ],
@@ -10,40 +9,47 @@
   "repository": "https://github.com/educorvi/bootstrap_vue_components",
   "bugs": "https://github.com/educorvi/bootstrap_vue_components/issues",
   "scripts": {
+    "legacyOpenSSL": "export NODE_OPTIONS=--openssl-legacy-provider",
     "serve": "vue-cli-service serve",
-    "build": "npm-run-all -p build:*",
+    "build": "npm-run-all -p 'build:*'",
     "build:bundle": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/bundle src/components/index.js",
     "build:bundleNV": "vue-cli-service build --name dist --target lib --dest dist/bundle-nv src/components/index.js",
     "build:accordion": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/accordion src/components/Accordion/index.js",
     "build:accordionNV": "vue-cli-service build --name dist --target lib --dest dist/accordion-nv src/components/Accordion/index.js",
+    "build:singleFileAudioPlayer": "vue-cli-service build --name dist --target lib --inline-vue --dest dist/singleFileAudio src/components/SingleFileAudioPlayer/index.js",
+    "build:singleFileAudioPlayerNV": "vue-cli-service build --name dist --target lib --dest dist/singleFileAudio-nv src/components/SingleFileAudioPlayer/index.js",
     "lint": "vue-cli-service lint",
     "release": "dotenv semantic-release",
     "zip": "zip-folder dist",
     "postversion": "npm run build && npm run zip"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "bootstrap-vue": "^2.21.2",
-    "core-js": "^3.6.5",
+    "axios": "^1.2.1",
+    "bootstrap": "^4.6.2",
+    "bootstrap-vue": "^2.23.1",
+    "core-js": "^3.26.1",
     "document-register-element": "^1.14.10",
-    "uuid": "^8.3.2",
-    "vue": "^2.6.12",
-    "vue-custom-element": "^3.3.0"
+    "uuid": "^9.0.0",
+    "vue": "^2.7.14",
+    "vue-custom-element": "^3.3.0",
+    "wavesurfer.js": "^6.4.0"
   },
   "devDependencies": {
     "@neferin/zip-folder": "^1.0.4",
-    "@semantic-release/git": "^9.0.0",
-    "@semantic-release/npm": "^7.1.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.1",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
-    "dotenv-cli": "^4.0.0",
-    "eslint": "^6.7.2",
+    "dotenv-cli": "^6.0.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.2.2",
     "npm-run-all": "^4.1.5",
-    "semantic-release": "^17.4.2",
-    "vue-template-compiler": "^2.6.11"
+    "sass": "^1.56.1",
+    "sass-loader": "^10.4.1",
+    "semantic-release": "^19.0.5",
+    "vue-template-compiler": "^2.7.14"
   },
   "eslintConfig": {
     "root": true,
@@ -63,5 +69,9 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "packageManager": "yarn@3.3.0",
+  "engines": {
+    "node": "^14.0.0"
+  }
 }

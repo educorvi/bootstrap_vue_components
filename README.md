@@ -10,7 +10,8 @@ Zusätzlich muss das CSS von Bootstrap vorhanden sein.
 
 `bundle` in der URL lässt sich durch eine der folgenden Möglichkeiten ersetzen, um nur den entsprechenden Komponenten zu importieren:
 - bundle
-- accordion
+- [accordion](./src/components/Accordion/README.md)
+- [singleFileAudio](./src/components/SingleFileAudioPlayer/README.md)
 
 An jede der Bezeichnungen kann noch -nv angehängt werden, zum Besipiel bundle-nv. Das ist dann eine Version, die Vue nicht enthält, die Dateigröße ist dann kleiner, allerdings muss das Vue-Script dann manuell hinzugefügt werden.
 
