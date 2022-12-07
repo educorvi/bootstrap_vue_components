@@ -1,6 +1,8 @@
 # Accordion
 
 Renders an accordion:
+
+
 ![Screenshot](../../img/accordion.png)
 
 ## Usage
