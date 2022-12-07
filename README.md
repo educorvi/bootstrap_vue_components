@@ -8,7 +8,7 @@ Alternativ finden sich die Skripte auch als Anhang an den Releases.
 
 Zusätzlich muss das CSS von Bootstrap vorhanden sein.
 
-`bundle` in der URL lässt sich durch eine der folgenden Möglichkeiten ersetzen, um nur den entsprechenden Komponenten zu importieren:
+`bundle` in der URL lässt sich durch eine der folgenden Möglichkeiten ersetzen, um nur die entsprechenden Komponenten zu importieren:
 - bundle
 - [accordion](./src/components/Accordion/README.md)
 - [singleFileAudio](./src/components/SingleFileAudioPlayer/README.md)
